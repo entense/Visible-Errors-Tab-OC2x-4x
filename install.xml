@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Visible Error Tab for Admin Form</name>
+  <code>visible_error</code>
+  <version>1.0</version>
+  <author>gghb</author>
+  <link>https://gghb.ru</link>
+  <file path="admin/controller/common/header.php">
+    <operation>
+      <search><![CDATA[$data['styles']]]></search>
+      <add position="before"><![CDATA[
+	  	if ($this->request->server['REQUEST_METHOD'] == 'POST') {
+			$this->document->addStyle('view/stylesheet/visible_error.css');
+			$this->document->addScript('view/javascript/visible_error.js');
+		}
+      ]]></add>
+    </operation>
+  </file>
+</modification>

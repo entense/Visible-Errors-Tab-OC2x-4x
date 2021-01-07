@@ -1,0 +1,29 @@
+#content .nav > li > a.error {
+    color: #c72f1d;
+}
+#content .nav > li > a.error .badge-error {
+    font-size: 11px;
+    border: 1px solid;
+    height: 17px;
+    line-height: 1.545em;
+    vertical-align: 0px;
+    margin-left: 0.5em;
+    padding: 0 0.397em;
+}
+#content .nav > li.active > a.error {
+    background-color: #f5c1bb;
+    border-color: #f5c1bb;
+}
+#content .nav > li > a.error .badge-error {
+    color: #c72f1d;
+    border-color: #f5c1bb;
+    background: white;
+}
+.error-popover {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.error-popover li:not(:last-child) {
+    margin-bottom: 5px;
+}
